@@ -7,7 +7,7 @@ export default class App {
     this.activeNote = null;
     this.view = new NotesView(root, this._handlers());
 
-    NotesAPI.deleteNote(3841773448);
+    NotesAPI.deleteNote(7169610133);
 
     this._refreshProfiles();
   }
@@ -90,7 +90,7 @@ export default class App {
             thirdQuarterLength: "",
             halfLength: "",
             sleeve: "",
-            roundSleeve: "13",
+            roundSleeve: "",
             neck: "",
           },
           skirt: {
@@ -117,7 +117,7 @@ export default class App {
       onNoteEdit: (
         name,
         address,
-        date,
+        currentDate,
         price,
         advancePayment,
         balance,
@@ -167,7 +167,7 @@ export default class App {
           id: this.activeNote.id,
           name,
           address,
-          date,
+          currentDate,
           price,
           advancePayment,
           balance,
@@ -217,7 +217,10 @@ export default class App {
         this._refreshProfiles();
       },
       onNoteDelete: (id) => {
-        console.log("Note " + id + " has been deleted");
+        NotesAPI.deleteNote(id);
+
+        this._refreshProfiles();
+        this._setActiveProfile();
       },
       setUpImagePreview: () => { // THIS CODE IS FOR USING THE LIGHTBOX FRAMEWORK ON THE IMAGES SELECTED. IT IS SIMPLY FOR PREVIEW OF IMAGES UPLOADED
         const imageSpace = this.root.querySelector("#imageSpace");
