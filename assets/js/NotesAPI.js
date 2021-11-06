@@ -1,9 +1,15 @@
 export default class NotesAPI {
   static getAllProfiles() {
     const notes = JSON.parse(localStorage.getItem("notesapp-notes") || "[]");
+    const defaultPlaceHolderText = document.querySelector(".default_placeholder");
+    if (notes.length != "") {
+      defaultPlaceHolderText.classList.remove("default_text_visible");
+    } else {
+      defaultPlaceHolderText.classList.add("default_text_visible");
+    }
 
     return notes.sort((a, b) => {
-      return new Date(a.updated) > new Date(b.updated) ? -1 : 1;
+      return new Date(a.currentDate) > new Date(b.currentDate) ? -1 : 1;
     });
   }
   static saveProfile(profileToSave) {

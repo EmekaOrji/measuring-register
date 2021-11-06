@@ -7,8 +7,6 @@ export default class App {
     this.activeNote = null;
     this.view = new NotesView(root, this._handlers());
 
-    NotesAPI.deleteNote(7169610133);
-
     this._refreshProfiles();
   }
 

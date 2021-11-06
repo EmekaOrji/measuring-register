@@ -54,7 +54,24 @@ h1 {
   justify-content: right;
   align-items: center;
 }
-
+.default_placeholder {
+  position: absolute;
+  font-size: 2em;
+  width: 50%;
+  color: #dddd;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  display: none;
+  align-items: center;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
+.default_text_visible {
+  display: flex;
+}
 
 
 
@@ -480,6 +497,9 @@ i {
   }
 }
 @media only screen and (min-width: 500px) {
+  .default_placeholder {
+    font-size: 3em;
+  }
   .profile_preview_pane {
     max-width: 480px;
   }

@@ -19,8 +19,7 @@ export default class NotesView {
     this.toggleMeasurements = toggleMeasurements;
     this.onInputFocus = onInputFocus;
     this.root.innerHTML = `
-      <div class="profile_preview_pane">
-      </div>
+      <div class="profile_preview_pane"></div>
       <div class="profile_view_pane">
         <div class="name_container input_container"><input type="text" name="Name" id="name" class="profile_inputs" placeholder="Customer's Name"><label for="name" class="label">Name</label></div>
         <div class="address_container input_container"><input type="text" name="Address" id="address" class="profile_inputs"><label for="address" class="label">Address</label></div>
@@ -463,7 +462,7 @@ export default class NotesView {
   }
   updateViewVisibility(visible) {
     const viewPane = this.root.querySelector(".profile_view_pane");
-    const previewPane = this.root.querySelector(".profile_preview_pane")
+    const previewPane = this.root.querySelector(".profile_preview_pane");
     visible ? viewPane.classList.add("profile_view_pane_visible") : viewPane.classList.remove("profile_view_pane_visible");
     visible ? previewPane.classList.add("profile_preview_pane_hidden") : previewPane.classList.remove("profile_preview_pane_hidden");
     this.root.querySelector(".profile_preview_pane").classList.add("profile_preview_pane_fullscreen");
