@@ -101,13 +101,10 @@ export default class NotesView {
           </div>
         </div>
       </div>
-      <button class="add_button buttons"><img src="media/drawing.svg" id="addIcon" alt="Plus"></button>
+      <button class="add_button buttons"><img src="media/plus.svg" id="addIcon" alt="Plus"></button>
     `;
 
-    const addButton = this.root.querySelector(".add_button");
-    const exitButton = this.root.querySelector(".exit_button");
-    const imageInput = this.root.querySelector("#image");
-
+    
     ///////////////////////////
     const nameInput = this.root.querySelector("#name");
     const addressInput = this.root.querySelector("#address");
@@ -158,6 +155,9 @@ export default class NotesView {
     const trouserFlapInput = this.root.querySelector("#trouserFlap");
     /////////////////////////////
 
+
+    const exitButton = this.root.querySelector(".exit_button");
+    const addButton = this.root.querySelector(".add_button");
     const profileInputs = [
       nameInput,
       addressInput,
@@ -207,6 +207,7 @@ export default class NotesView {
       trouserAnkleInput,
       trouserFlapInput
     ];
+    const imageInput = this.root.querySelector("#image");
 
     exitButton.addEventListener("click", () => {
       this.onNoteExit();
@@ -316,15 +317,11 @@ export default class NotesView {
       );
     }));
 
-    this.updateViewVisibility(false);
-
-
-
-
-    ///////////////////////////////////////////////////////////////////////////
     imageInput.addEventListener("change", () => {
       this.setUpImagePreview();
     });
+
+    this.updateViewVisibility(false);
 
     this.setUpMeasuringUnits();
 
@@ -338,7 +335,7 @@ export default class NotesView {
         <h2 class="preview_name">${name}</h2>
         <div class="preview_body">
           <span class="hort_branding">House of Rhoda Treasures</span>
-          <div class="preview_reg_date"><span class="material-icons">how_to_reg</span><span class="preview_reg_date_figure">${currentDate.toLocaleDateString(undefined, {month: "short", day: "numeric"})}</span></div>
+          <div class="preview_reg_date"><img src="media/regdate.svg" id="regDate" alt="Date"><span class="preview_reg_date_figure">${currentDate.toLocaleDateString(undefined, {month: "short", day: "numeric"})}</span></div>
           <div class="preview_price"><span class="preview_price_naira">&#8358</span><span class="preview_price_naira">${price}</span></div>
           <div class="preview_updated">Last edited at <span class="preview_updated_time">${updated.toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })}</span></div>
         </div>
