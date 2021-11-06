@@ -7,6 +7,8 @@ export default class App {
     this.activeNote = null;
     this.view = new NotesView(root, this._handlers());
 
+    NotesAPI.deleteNote(3841773448);
+
     this._refreshProfiles();
   }
 
@@ -34,16 +36,19 @@ export default class App {
         this._setActiveProfile(selectedProfile);
       },
       onNoteAdd: () => {
-        // const today = new Date();
+        const today = new Date();
+        today.setHours(today.getHours() + 1);
+        const newToday = today.toISOString();
+        console.log(newToday);
         const newProfile = {
           id: 7746391899,
-          name: "Gulliver Mario",
+          name: "Emeka Orji",
           address: "6, Popoola Street",
-          currentDate: new Date(),
+          currentDate: newToday.slice(0, -8),
           price: 500,
           advancePayment: 300,
           balance: 200,
-          dueDate: new Date(),
+          dueDate: newToday.slice(0, -14),
           phone: "09033661958",
           yardAmount: 3,
           imageURL: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fcool-cat-hd-wallpaper%2F&psig=AOvVaw0wflQqmXIQEtAEZiCn3TnC&ust=1634905683014000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDel7rA2_MCFQAAAAAdAAAAABAD",

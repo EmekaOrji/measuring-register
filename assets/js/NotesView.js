@@ -409,7 +409,7 @@ export default class NotesView {
     const trouserFlapInput = this.root.querySelector("#trouserFlap");
     nameInput.value = card.name;
     addressInput.value = card.address;
-    currentDateInput.value = new Date();
+    currentDateInput.value = card.currentDate;
     priceInput.value = card.price;
     advancePaymentInput.value = card.advancePayment;
     balanceInput.value = card.balance;
