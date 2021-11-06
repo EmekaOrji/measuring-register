@@ -466,14 +466,4 @@ export default class NotesView {
     visible ? viewPane.classList.add("profile_view_pane_visible") : viewPane.classList.remove("profile_view_pane_visible");
     this.root.querySelector(".profile_preview_pane").classList.add("profile_preview_pane_fullscreen");
   }
-  changeUnit() {
-    const units = document.querySelectorAll(".measuring_unit");
-    const headUnit = document.querySelectorAll("span[class*='header_unit']");
-    this.textContent === "cm" ? this.textContent = "inch" : this.textContent = "cm";
-    units.forEach(e => e.textContent = this.textContent);
-    headUnit.forEach(e => e.textContent = this.textContent);
-  }
-  togglePane(x) {
-    this.checked ? x.currentTarget.myArg.classList.add("tuckout") : x.currentTarget.myArg.classList.remove("tuckout");
-  }
 }

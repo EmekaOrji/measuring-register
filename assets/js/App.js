@@ -29,6 +29,18 @@ export default class App {
     this.view.setActiveProfile(profile);
   }
 
+  changeUnit() {
+    const units = document.querySelectorAll(".measuring_unit");
+    const headUnit = document.querySelectorAll("span[class*='header_unit']");
+    this.textContent === "cm" ? this.textContent = "inch" : this.textContent = "cm";
+    units.forEach(e => e.textContent = this.textContent);
+    headUnit.forEach(e => e.textContent = this.textContent);
+  }
+
+  togglePane(x) {
+    this.checked ? x.currentTarget.myArg.classList.add("tuckout") : x.currentTarget.myArg.classList.remove("tuckout");
+  }
+
   _handlers() {
     return {
       onNoteSelect: id => {
@@ -41,165 +53,168 @@ export default class App {
         const newToday = today.toISOString();
         console.log(newToday);
         const newProfile = {
-          id: 7746391899,
-          name: "Emeka Orji",
-          address: "6, Popoola Street",
+          name: "",
+          address: "",
           currentDate: newToday.slice(0, -8),
-          price: 500,
-          advancePayment: 300,
-          balance: 200,
+          price: "",
+          advancePayment: "",
+          balance: "",
           dueDate: newToday.slice(0, -14),
-          phone: "09033661958",
-          yardAmount: 3,
+          phone: "",
+          yardAmount: "",
           imageURL: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fcool-cat-hd-wallpaper%2F&psig=AOvVaw0wflQqmXIQEtAEZiCn3TnC&ust=1634905683014000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDel7rA2_MCFQAAAAAdAAAAABAD",
           blouse: {
-            lenth: 34,
-            burst: 40,
-            upperBurst: 35,
-            lowerBurst: 34,
-            roundLowerBurst: 30,
-            waist: 29,
-            shoulder: 18,
-            hip: 38,
-            thirdQuarterLength: 39,
-            halfLength: 33,
-            sleeve: 25,
-            roundSleeve: "13",
-            neck: 16,
+            lenth: "",
+            burst: "",
+            upperBurst: "",
+            lowerBurst: "",
+            roundLowerBurst: "",
+            waist: "",
+            shoulder: "",
+            hip: "",
+            thirdQuarterLength: "",
+            halfLength: "",
+            sleeve: "",
+            roundSleeve: "",
+            neck: "",
           },
           gown: {
-            lenth: 41,
-            burst: 40,
-            upperBurst: 35,
-            lowerBurst: 34,
-            roundLowerBurst: 30,
-            waist: 29,
-            shoulder: 18,
-            hip: 38,
-            thirdQuarterLength: 39,
-            halfLength: 33,
-            sleeve: 25,
+            lenth: "",
+            burst: "",
+            upperBurst: "",
+            lowerBurst: "",
+            roundLowerBurst: "",
+            waist: "",
+            shoulder: "",
+            hip: "",
+            thirdQuarterLength: "",
+            halfLength: "",
+            sleeve: "",
             roundSleeve: "13",
-            neck: 16,
+            neck: "",
           },
           skirt: {
-            lenth: 38,
-            halfLength: 22,
-            waist: 29,
-            hip: 38,
+            lenth: "",
+            halfLength: "",
+            waist: "",
+            hip: "",
           },
           trouser: {
-            lenth: 37.5,
-            waist: 29,
-            thight: 22,
-            knee: 16,
-            calf: 15,
-            ankle: 13,
-            flap: 11,
+            lenth: "",
+            waist: "",
+            thight: "",
+            knee: "",
+            calf: "",
+            ankle: "",
+            flap: "",
           },
         };
-        // console.log(newProfile.currentDate);
-
+        
         NotesAPI.saveProfile(newProfile);
         this._refreshProfiles();
+        this._setActiveProfile(newProfile);
       },
       onNoteEdit: (
-        newName,
-        newAddress,
-        newDate,
-        newPrice,
-        newAdvancePayment,
-        newBalance,
-        newDueDate,
-        newPhone,
-        newYardAmount,
-        newImageURL,
-        newBlouseLength,
-        newBlouseBurst,
-        newBlouseUpperBurst,
-        newBlouseLowerBurst,
-        newBlouseRoundLowerBurst,
-        newBlouseWaist,
-        newBlouseShoulder,
-        newBlouseHip,
-        newBlouseThirdQuarterLength,
-        newBlouseHalfLength,
-        newBlouseSleeve,
-        newBlouseRoundSleeve,
-        newBlouseNeck,
-        newGownLength,
-        newGownBurst,
-        newGownUpperBurst,
-        newGownLowerBurst,
-        newGownRoundLowerBurst,
-        newGownWaist,
-        newGownShoulder,
-        newGownHip,
-        newGownThirdQuarterLength,
-        newGownHalfLength,
-        newGownSleeve,
-        newGownRoundSleeve,
-        newGownNeck,
-        newSkirtLength,
-        newSkirtHalfLength,
-        newSkirtWaist,
-        newSkirtHip,
-        newTrouserLength,
-        newTrouserWaist,
-        newTrouserThight,
-        newTrouserKnee,
-        newTrouserCalf,
-        newTrouserAnkle,
-        newTrouserFlap
+        name,
+        address,
+        date,
+        price,
+        advancePayment,
+        balance,
+        dueDate,
+        phone,
+        yardAmount,
+        imageURL,
+        blouseLength,
+        blouseBurst,
+        blouseUpperBurst,
+        blouseLowerBurst,
+        blouseRoundLowerBurst,
+        blouseWaist,
+        blouseShoulder,
+        blouseHip,
+        blouseThirdQuarterLength,
+        blouseHalfLength,
+        blouseSleeve,
+        blouseRoundSleeve,
+        blouseNeck,
+        gownLength,
+        gownBurst,
+        gownUpperBurst,
+        gownLowerBurst,
+        gownRoundLowerBurst,
+        gownWaist,
+        gownShoulder,
+        gownHip,
+        gownThirdQuarterLength,
+        gownHalfLength,
+        gownSleeve,
+        gownRoundSleeve,
+        gownNeck,
+        skirtLength,
+        skirtHalfLength,
+        skirtWaist,
+        skirtHip,
+        trouserLength,
+        trouserWaist,
+        trouserThight,
+        trouserKnee,
+        trouserCalf,
+        trouserAnkle,
+        trouserFlap
       ) => {
-        console.log("Note is being edited");
-        console.log(newName);
-        console.log(newAddress);
-        console.log(newDate);
-        console.log(newPrice);
-        console.log(newAdvancePayment);
-        console.log(newBalance);
-        console.log(newDueDate);
-        console.log(newPhone);
-        console.log(newYardAmount);
-        console.log(newImageURL);
-        console.log(newBlouseLength);
-        console.log(newBlouseBurst);
-        console.log(newBlouseUpperBurst);
-        console.log(newBlouseLowerBurst);
-        console.log(newBlouseRoundLowerBurst);
-        console.log(newBlouseWaist);
-        console.log(newBlouseShoulder);
-        console.log(newBlouseHip);
-        console.log(newBlouseThirdQuarterLength);
-        console.log(newBlouseHalfLength);
-        console.log(newBlouseSleeve);
-        console.log(newBlouseRoundSleeve);
-        console.log(newBlouseNeck);
-        console.log(newGownLength);
-        console.log(newGownBurst);
-        console.log(newGownUpperBurst);
-        console.log(newGownLowerBurst);
-        console.log(newGownRoundLowerBurst);
-        console.log(newGownWaist);
-        console.log(newGownShoulder);
-        console.log(newGownHip);
-        console.log(newGownThirdQuarterLength);
-        console.log(newGownHalfLength);
-        console.log(newGownSleeve);
-        console.log(newGownRoundSleeve);
-        console.log(newGownNeck);
-        console.log(newSkirtLength);
-        console.log(newSkirtHalfLength);
-        console.log(newSkirtWaist);
-        console.log(newSkirtHip);
-        console.log(newTrouserLength);
-        console.log(newTrouserWaist);
-        console.log(newTrouserThight);
-        console.log(newTrouserKnee);
-        console.log(newTrouserCalf);
-        console.log(newTrouserAnkle);
-        console.log(newTrouserFlap);
+        NotesAPI.saveProfile({
+          id: this.activeNote.id,
+          name,
+          address,
+          date,
+          price,
+          advancePayment,
+          balance,
+          dueDate,
+          phone,
+          yardAmount,
+          imageURL,
+          blouseLength,
+          blouseBurst,
+          blouseUpperBurst,
+          blouseLowerBurst,
+          blouseRoundLowerBurst,
+          blouseWaist,
+          blouseShoulder,
+          blouseHip,
+          blouseThirdQuarterLength,
+          blouseHalfLength,
+          blouseSleeve,
+          blouseRoundSleeve,
+          blouseNeck,
+          gownLength,
+          gownBurst,
+          gownUpperBurst,
+          gownLowerBurst,
+          gownRoundLowerBurst,
+          gownWaist,
+          gownShoulder,
+          gownHip,
+          gownThirdQuarterLength,
+          gownHalfLength,
+          gownSleeve,
+          gownRoundSleeve,
+          gownNeck,
+          skirtLength,
+          skirtHalfLength,
+          skirtWaist,
+          skirtHip,
+          trouserLength,
+          trouserWaist,
+          trouserThight,
+          trouserKnee,
+          trouserCalf,
+          trouserAnkle,
+          trouserFlap
+        });
+
+        this._refreshProfiles();
       },
       onNoteDelete: (id) => {
         console.log("Note " + id + " has been deleted");
