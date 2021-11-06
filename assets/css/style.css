@@ -12,6 +12,7 @@ body {
   height: 100vh;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 .land_page {
   display: flex;
@@ -206,10 +207,10 @@ h1 {
   background: #4169e1a8;
   border-radius: 10px;
 }
-.add_profile {
-  position: fixed;
+.buttons {
   bottom: 2em;
   right: 2em;
+  visibility: hidden;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   padding: 1em 1.2em .8em 1.2em;
@@ -217,6 +218,16 @@ h1 {
   background: none;
   box-shadow: .05px .05px 1.5em .04em #000a;
   background: whitesmoke;
+}
+.exit_button {
+  position: absolute;
+  padding-left: .7em;
+}
+#exitIcon {
+  transform: rotate(90deg);
+}
+.add_button {
+  position: fixed;
 }
 #addIcon {
   width: 4em;
@@ -495,8 +506,17 @@ i {
     width: 100%;
     z-index: 999;
   }
+  .exit_button_visible {
+    visibility: visible;
+  }
+  .add_button_visible {
+    visibility: visible;
+  }
 }
 @media only screen and (min-width: 500px) {
+  .buttons {
+    visibility: visible;
+  }
   .default_placeholder {
     font-size: 3em;
   }

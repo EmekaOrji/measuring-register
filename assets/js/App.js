@@ -27,6 +27,13 @@ export default class App {
     this.view.setActiveProfile(profile);
   }
 
+  _unsetActiveProfile() {
+    this.activeNote = null;
+    this.view.updateViewVisibility(false);
+    this.view.setActiveProfile([]);
+    this._refreshProfiles();
+  }
+
   changeUnit() {
     const units = document.querySelectorAll(".measuring_unit");
     const headUnit = document.querySelectorAll("span[class*='header_unit']");
@@ -274,6 +281,9 @@ export default class App {
           e.addEventListener("focus", () => e.parentElement.style.boxShadow = "0em .1em .3em #00008b66");
           e.addEventListener("blur", () => e.parentElement.style.boxShadow = "");
         });
+      },
+      onNoteExit: () => {
+        this._unsetActiveProfile()
       }
     }
   }

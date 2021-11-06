@@ -7,7 +7,8 @@ export default class NotesView {
     setUpImagePreview,
     setUpMeasuringUnits,
     toggleMeasurements,
-    onInputFocus
+    onInputFocus,
+    onNoteExit,
   } = {}) {
     this.root = root;
     this.onNoteSelect = onNoteSelect;
@@ -18,9 +19,11 @@ export default class NotesView {
     this.setUpMeasuringUnits = setUpMeasuringUnits;
     this.toggleMeasurements = toggleMeasurements;
     this.onInputFocus = onInputFocus;
+    this.onNoteExit = onNoteExit;
     this.root.innerHTML = `
       <div class="profile_preview_pane"></div>
       <div class="profile_view_pane">
+        <button class="exit_button buttons"><img src="media/exit.png" id="exitIcon" alt="Exit"></button>
         <div class="name_container input_container"><input type="text" name="Name" id="name" class="profile_inputs" placeholder="Customer's Name"><label for="name" class="label">Name</label></div>
         <div class="address_container input_container"><input type="text" name="Address" id="address" class="profile_inputs"><label for="address" class="label">Address</label></div>
         <div class="date_container input_container"><input type="datetime-local" name="Date" id="date" class="profile_inputs"><label for="date" class="label">Date/Time</label></div>
@@ -98,10 +101,11 @@ export default class NotesView {
           </div>
         </div>
       </div>
-      <button class="add_profile"><img src="media/drawing.svg" id="addIcon" alt="Plus"></button>
+      <button class="add_button buttons"><img src="media/drawing.svg" id="addIcon" alt="Plus"></button>
     `;
 
-    const addButton = this.root.querySelector(".add_profile");
+    const addButton = this.root.querySelector(".add_button");
+    const exitButton = this.root.querySelector(".exit_button");
     const imageInput = this.root.querySelector("#image");
 
     ///////////////////////////
@@ -203,6 +207,10 @@ export default class NotesView {
       trouserAnkleInput,
       trouserFlapInput
     ];
+
+    exitButton.addEventListener("click", () => {
+      this.onNoteExit();
+    });
 
     addButton.addEventListener("click", () => {
       this.onNoteAdd();
@@ -463,8 +471,12 @@ export default class NotesView {
   updateViewVisibility(visible) {
     const viewPane = this.root.querySelector(".profile_view_pane");
     const previewPane = this.root.querySelector(".profile_preview_pane");
+    const exitButton = this.root.querySelector(".exit_button");
+    const addButton = this.root.querySelector(".add_button");
     visible ? viewPane.classList.add("profile_view_pane_visible") : viewPane.classList.remove("profile_view_pane_visible");
     visible ? previewPane.classList.add("profile_preview_pane_hidden") : previewPane.classList.remove("profile_preview_pane_hidden");
+    visible ? exitButton.classList.add("exit_button_visible") : exitButton.classList.remove("exit_button_visible");
+    visible ? addButton.classList.remove("add_button_visible") : addButton.classList.add("add_button_visible");
     this.root.querySelector(".profile_preview_pane").classList.add("profile_preview_pane_fullscreen");
   }
 }
