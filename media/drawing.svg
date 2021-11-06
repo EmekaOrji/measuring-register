@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="161mm"
+   height="161mm"
+   viewBox="0 0 161 161"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="drawing.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72880595"
+     inkscape:cx="379.38768"
+     inkscape:cy="338.22446"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g35247"
+     height="200mm" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient14102"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#1232bc;stop-opacity:1;"
+         offset="0"
+         id="stop14100" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       id="g14653"
+       transform="matrix(0.9051422,0,0,0.90590901,43.506373,-5.4029566)">
+      <g
+         id="g35247"
+         transform="matrix(1.0069489,0,0,1.0050457,-0.23840798,-0.5193532)">
+        <g
+           id="g14735"
+           transform="matrix(1,0,0,1.0067817,-21.046423,-21.704401)">
+          <g
+             id="g14721">
+            <rect
+               style="fill:#00008c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.233572"
+               id="rect129"
+               width="24"
+               height="77.270454"
+               x="50"
+               y="29.010992"
+               ry="3.0049624" />
+            <path
+               sodipodi:type="star"
+               style="fill:#00008c;fill-opacity:1;fill-rule:evenodd"
+               id="path993"
+               inkscape:flatsided="true"
+               sodipodi:sides="3"
+               sodipodi:cx="-487.09335"
+               sodipodi:cy="214.48145"
+               sodipodi:r1="79.828423"
+               sodipodi:r2="39.914211"
+               sodipodi:arg1="0.49734272"
+               sodipodi:arg2="1.5445403"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(-0.1736372,0,0,-0.10278324,-22.395577,130.44118)"
+               inkscape:transform-center-x="0.18194539"
+               inkscape:transform-center-y="1.8804961"
+               d="m -416.93587,252.56694 -138.21923,3.62992 65.96601,-121.51632 z" />
+          </g>
+          <g
+             id="g14703">
+            <rect
+               style="fill:#2d3bd2;fill-opacity:1;fill-rule:evenodd;stroke-width:0.233671"
+               id="rect1387"
+               width="24"
+               height="77.335915"
+               x="103.69"
+               y="-149.43394"
+               ry="3.007508"
+               transform="rotate(90)" />
+            <path
+               sodipodi:type="star"
+               style="fill:#2d3bd2;fill-opacity:1;fill-rule:evenodd"
+               id="path1389"
+               inkscape:flatsided="true"
+               sodipodi:sides="3"
+               sodipodi:cx="-487.09335"
+               sodipodi:cy="214.48145"
+               sodipodi:r1="79.828423"
+               sodipodi:r2="39.914211"
+               sodipodi:arg1="0.49734272"
+               sodipodi:arg2="1.5445403"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(0,-0.1736372,0.10278324,0,48.417099,31.294423)"
+               inkscape:transform-center-x="0.18194539"
+               inkscape:transform-center-y="1.8804961"
+               d="m -416.93587,252.56694 -138.21923,3.62992 65.96601,-121.51632 z" />
+          </g>
+          <g
+             id="g14709">
+            <rect
+               style="fill:#5477eb;fill-opacity:1;fill-rule:evenodd;stroke-width:0.233572"
+               id="rect1393"
+               width="24"
+               height="77.270454"
+               x="-74.74984"
+               y="-202.68173"
+               ry="3.0049624"
+               transform="scale(-1)" />
+            <path
+               sodipodi:type="star"
+               style="fill:#5477eb;fill-opacity:1;fill-rule:evenodd"
+               id="path1395"
+               inkscape:flatsided="true"
+               sodipodi:sides="3"
+               sodipodi:cx="-487.09335"
+               sodipodi:cy="214.48145"
+               sodipodi:r1="79.828423"
+               sodipodi:r2="39.914211"
+               sodipodi:arg1="0.49734272"
+               sodipodi:arg2="1.5445403"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(0.1736372,0,0,0.10278324,147.14542,101.73035)"
+               inkscape:transform-center-x="0.18194539"
+               inkscape:transform-center-y="1.8804961"
+               d="m -416.93587,252.56694 -138.21923,3.62992 65.96601,-121.51632 z" />
+          </g>
+          <g
+             id="g14715">
+            <rect
+               style="fill:#5477eb;fill-opacity:1;fill-rule:evenodd;stroke-width:0.233671"
+               id="rect1399"
+               width="24"
+               height="77.335915"
+               x="-128.59225"
+               y="-25.287022"
+               ry="3.007508"
+               transform="rotate(-90)" />
+            <path
+               sodipodi:type="star"
+               style="fill:#5477eb;fill-opacity:1;fill-rule:evenodd"
+               id="path1401"
+               inkscape:flatsided="true"
+               sodipodi:sides="3"
+               sodipodi:cx="-487.09335"
+               sodipodi:cy="214.48145"
+               sodipodi:r1="79.828423"
+               sodipodi:r2="39.914211"
+               sodipodi:arg1="0.49734272"
+               sodipodi:arg2="1.5445403"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(0,0.1736372,-0.10278324,0,76.709488,200.98784)"
+               inkscape:transform-center-x="0.18194539"
+               inkscape:transform-center-y="1.8804961"
+               d="m -416.93587,252.56694 -138.21923,3.62992 65.96601,-121.51632 z" />
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.202797;stroke:none;stroke-width:0.292188"
+           x="112.94499"
+           y="105.45548"
+           id="text17289"
+           transform="scale(1.0004235,0.99957668)"><tspan
+             sodipodi:role="line"
+             id="tspan17287"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.202797;stroke-width:0.292188"
+             x="112.94499"
+             y="105.45548">HORT</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.292188"
+           x="-23.213804"
+           y="51.695103"
+           id="text4876"
+           transform="matrix(0,-1.0014695,0.99853265,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan4874"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke-width:0.292188"
+             x="-23.213804"
+             y="51.695103">HORT</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.292188"
+           x="166.60349"
+           y="-30.961094"
+           id="text5150"
+           transform="matrix(0,1.0014695,-0.99853265,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan5148"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke-width:0.292188"
+             x="166.60349"
+             y="-30.961094">HORT</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:0.292188"
+           x="31.025208"
+           y="-84.721443"
+           id="text5194"
+           transform="scale(-1.0004235,-0.99957668)"><tspan
+             sodipodi:role="line"
+             id="tspan5192"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.45417px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.2;stroke-width:0.292188"
+             x="31.025208"
+             y="-84.721443">HORT</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

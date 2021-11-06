@@ -1,0 +1,120 @@
+[
+  {
+    "id": 7746391899,
+    "name": "Gulliver Mario",
+    "address": "6, Popoola Street",
+    "currentDate": "2015-03-25T12:00:00",
+    "price": 500,
+    "advancePayment": 300,
+    "balance": 200,
+    "dueDate": "2017-07-15",
+    "phone": "09033661958",
+    "yardAmount": 3,
+    "imageURL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fcool-cat-hd-wallpaper%2F&psig=AOvVaw0wflQqmXIQEtAEZiCn3TnC&ust=1634905683014000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDel7rA2_MCFQAAAAAdAAAAABAD",
+    "blouse": {
+      "lenth": 34,
+      "burst": 40,
+      "upperBurst": 35,
+      "lowerBurst": 34,
+      "roundLowerBurst": 30,
+      "waist": 29,
+      "shoulder": 18,
+      "hip": 38,
+      "thirdQuarterLength": 39,
+      "halfLength": 33,
+      "sleeve": 25,
+      "roundSleeve": "13",
+      "neck": 16
+    },
+    "gown": {
+      "lenth": 41,
+      "burst": 40,
+      "upperBurst": 35,
+      "lowerBurst": 34,
+      "roundLowerBurst": 30,
+      "waist": 29,
+      "shoulder": 18,
+      "hip": 38,
+      "thirdQuarterLength": 39,
+      "halfLength": 33,
+      "sleeve": 25,
+      "roundSleeve": "13",
+      "neck": 16
+    },
+    "skirt": {
+      "lenth": 38,
+      "halfLength": 22,
+      "waist": 29,
+      "hip": 38
+    },
+    "trouser": {
+      "lenth": 37.5,
+      "waist": 29,
+      "thight": 22,
+      "knee": 16,
+      "calf": 15,
+      "ankle": 13,
+      "flap": 11
+    },
+    "updated": "2021-11-01T19:09:56.846Z"
+  },
+  {
+    "id": 3429636027,
+    "name": "Emeka Orji",
+    "address": "12, Popoola Street",
+    "currentDate": "2015-03-25T12:00:00",
+    "price": 500,
+    "advancePayment": 300,
+    "balance": 200,
+    "dueDate": "2021-11-02",
+    "phone": "09033661958",
+    "yardAmount": 3,
+    "imageURL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fcool-cat-hd-wallpaper%2F&psig=AOvVaw0wflQqmXIQEtAEZiCn3TnC&ust=1634905683014000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDel7rA2_MCFQAAAAAdAAAAABAD",
+    "blouse": {
+      "lenth": 34,
+      "burst": 40,
+      "upperBurst": 35,
+      "lowerBurst": 34,
+      "roundLowerBurst": 30,
+      "waist": 29,
+      "shoulder": 18,
+      "hip": 38,
+      "thirdQuarterLength": 39,
+      "halfLength": 33,
+      "sleeve": 25,
+      "roundSleeve": "13",
+      "neck": 16
+    },
+    "gown": {
+      "lenth": 41,
+      "burst": 40,
+      "upperBurst": 35,
+      "lowerBurst": 34,
+      "roundLowerBurst": 30,
+      "waist": 29,
+      "shoulder": 18,
+      "hip": 38,
+      "thirdQuarterLength": 39,
+      "halfLength": 33,
+      "sleeve": 25,
+      "roundSleeve": "13",
+      "neck": 16
+    },
+    "skirt": {
+      "lenth": 38,
+      "halfLength": 22,
+      "waist": 29,
+      "hip": 38
+    },
+    "trouser": {
+      "lenth": 37.5,
+      "waist": 29,
+      "thight": 22,
+      "knee": 16,
+      "calf": 15,
+      "ankle": 13,
+      "flap": 11
+    },
+    "updated": "2021-11-01T19:09:56.846Z"
+  }
+]
