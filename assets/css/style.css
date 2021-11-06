@@ -37,9 +37,10 @@ h1 {
 }
 .hort {
   background: rgb(57, 92, 196);
-  color: transparent;
+  color: #000;
+  font-size: 1.8em;
   height: 100%;
-  width: 30%;
+  width: 50%;
   padding: .5em;
   display: flex;
   justify-content: center;
@@ -470,10 +471,10 @@ i {
   }
 }
 @media only screen and (max-width: 500px) {
-  .profile_preview_pane_hide {
+  .profile_preview_pane_hidden {
     width: 0%;
   }
-  .profile_view_pane_show {
+  .profile_view_pane_visible {
     width: 100%;
     z-index: 999;
   }
@@ -494,8 +495,8 @@ i {
   }
   input {
     font-size: 1.2em;
-    }
-    .profile_view_pane::-webkit-scrollbar-thumb:hover {
+  }
+  .profile_view_pane::-webkit-scrollbar-thumb:hover {
     background: royalblue;
   }
   .profile_view_pane::-webkit-scrollbar {

@@ -463,7 +463,9 @@ export default class NotesView {
   }
   updateViewVisibility(visible) {
     const viewPane = this.root.querySelector(".profile_view_pane");
+    const previewPane = this.root.querySelector(".profile_preview_pane")
     visible ? viewPane.classList.add("profile_view_pane_visible") : viewPane.classList.remove("profile_view_pane_visible");
+    visible ? previewPane.classList.add("profile_preview_pane_hidden") : previewPane.classList.remove("profile_preview_pane_hidden");
     this.root.querySelector(".profile_preview_pane").classList.add("profile_preview_pane_fullscreen");
   }
 }
